@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../../js/jquery/jquery.min.js"></script>
+    <style>
+        div{
+            margin: 0px auto;
+        }
+        .a{ width: 960px; height: 200px; }
+        .parentBox{ padding: 30px; margin-top: 40px; width: 960px; height: 300px; border:1px solid #012345}
+        .innerBox{ padding: 20px; margin-top: 60px; width: 400px; height: 100px; border:1px solid #312234}
+    </style>
+</head>
+<body>
+    <div class="a" id="a">
+        <div class="parentBox">
+            <div class="innerBox">innerBox</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function(){
+        var_offsetTop = $(".innerBox").offset().top;
+        console.log(var_offsetTop);
+        console.log($(".innerBox").height());
+    });
+</script>
+</html>
